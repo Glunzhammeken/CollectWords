@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="word">  
+        <button @click="SaveWord">Save</button>
+        <button @click="ShowWords">Show</button>
+        <button @click="ClearWords">Clear</button>
+        <p>{{ message }}</p>  
+        <p v-if="sortedWords.length">The words you entered are: {{ sortedWords.join(", ") }}</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
