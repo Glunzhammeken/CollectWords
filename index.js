@@ -35,7 +35,12 @@ Vue.createApp({
         ClearWords() {
             this.words = []
             this.message = "All words have been cleared"
+        },
+        RemoveWord(index) {
+            this.words.splice(index, 1)
         }
+
+        
 
     }
 

@@ -26,6 +26,7 @@
               </tr>
               <tr v-for="(word, index) in sortedWords" :key="index">
                 <td>{{ word }}</td>
+                <td><button @click="RemoveWord(index)" class="btn btn-danger">Delete</button></td>
               </tr>
             </table>
         </div>
